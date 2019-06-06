@@ -20,6 +20,13 @@ protocol MKAudioPlayerDelegate: class {
     func update(player: AVAudioPlayer)
 }
 
+// Audio player state
+enum PlayerState {
+    case stop
+    case play
+    case pause
+}
+
 final class MKAudioPlayer: NSObject {
     
     // Audio player
